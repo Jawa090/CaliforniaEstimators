@@ -1,0 +1,674 @@
+/* Electrical Estimating Page Styles */
+
+.electrical-hero {
+    background: linear-gradient(rgba(14, 76, 146, 0.9), rgba(14, 76, 146, 0.7)), 
+                url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2669&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-item svg {
+    color: #FFD700;
+}
+
+.feature-item span {
+    font-weight: 500;
+}
+
+/* Layout */
+.electrical-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+/* Service Overview */
+.service-overview h2 {
+    color: var(--primary-blue);
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.service-overview > p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.electrical-expertise {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.expertise-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-blue);
+}
+
+.expertise-icon {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.expertise-card h3 {
+    margin: 0 0 15px 0;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+
+.expertise-card p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Electrical Systems */
+.electrical-systems {
+    margin-top: 60px;
+}
+
+.electrical-systems h2 {
+    color: var(--primary-blue);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.systems-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.system-category {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.category-header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.power .category-header {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #333;
+}
+
+.lighting .category-header {
+    background: linear-gradient(135deg, #4A90E2, #357ABD);
+    color: white;
+}
+
+.safety .category-header {
+    background: linear-gradient(135deg, #E74C3C, #C0392B);
+    color: white;
+}
+
+.technology .category-header {
+    background: linear-gradient(135deg, #2ECC71, #27AE60);
+    color: white;
+}
+
+.category-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.category-content {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.system-group h4 {
+    margin: 0 0 15px 0;
+    color: var(--primary-blue);
+    font-size: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.system-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.system-group li {
+    padding: 6px 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.system-group li::before {
+    content: '•';
+    color: var(--primary-blue);
+    position: absolute;
+    left: 0;
+}
+
+/* Estimating Methodology */
+.estimating-methodology {
+    margin-top: 60px;
+}
+
+.estimating-methodology h2 {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.estimating-methodology > p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.methodology-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.method-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.method-step:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-badge {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-info h4 {
+    margin: 0 0 8px 0;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.step-info p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Case Study */
+.case-study {
+    margin-top: 60px;
+}
+
+.case-study h2 {
+    color: var(--primary-blue);
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.case-study-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+}
+
+.case-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.case-header svg {
+    color: #FFD700;
+}
+
+.case-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.6rem;
+}
+
+.case-details p {
+    margin: 0 0 15px 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.case-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.case-content {
+    padding: 30px;
+}
+
+.case-content > p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.project-highlights h4 {
+    margin: 0 0 20px 0;
+    color: var(--text-dark);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-blue);
+}
+
+.highlight-item svg {
+    color: var(--primary-blue);
+}
+
+.highlight-item span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.case-results {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.result-box {
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.result-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+.result-desc {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Energy Efficiency */
+.energy-efficiency {
+    margin-top: 60px;
+}
+
+.energy-efficiency h2 {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.energy-efficiency > p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.efficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.efficiency-item {
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.efficiency-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.efficiency-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.efficiency-item h4 {
+    margin: 0 0 10px 0;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.efficiency-item p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Sidebar */
+.electrical-sidebar {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.pricing-card,
+.services-card,
+.upload-card,
+.credentials-card,
+.software-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+    margin-bottom: 25px;
+}
+
+.pricing-card {
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 4px solid var(--primary-blue);
+}
+
+.price-display {
+    margin: 20px 0;
+}
+
+.price {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.price-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.pricing-tiers {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.tier-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.tier-info strong {
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+}
+
+.tier-info span {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.tier-price {
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.services-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.services-list svg {
+    color: #2ECC71;
+}
+
+.upload-card {
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+}
+
+.upload-card h3,
+.upload-card p {
+    color: white;
+}
+
+.upload-icon {
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.credentials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.credential-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-blue);
+}
+
+.credential-item svg {
+    color: var(--primary-blue);
+}
+
+.credential-item span {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.software-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.software-item {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    border: 1px solid #e9ecef;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .electrical-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .electrical-expertise,
+    .efficiency-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .case-results {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .case-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    .method-step {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,164 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+  /* Brand Colors */
+  --primary-blue: #0E4C92;
+  --secondary-blue: #08366B;
+  /* Darker shade */
+  --accent-grey: #F4F6F9;
+  --text-dark: #1A1A1A;
+  --text-light: #666666;
+  --white: #FFFFFF;
+  --border-color: #E0E0E0;
+
+  /* Spacing */
+  --container-width: 1200px;
+  --header-height: 80px;
+
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border-radius: 0px;
+  /* Sharp buttons as requested */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: 2px solid var(--primary-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-blue);
+  border-color: var(--secondary-blue);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.grid-bg {
+  background-color: var(--white);
+  background-image: linear-gradient(rgba(14, 76, 146, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 76, 146, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  /* Blueprint grid effect */
+}
+
+/* Page Hero Banner Global Style */
+.page-banner {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+.page-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(14, 76, 146, 0.8), rgba(8, 54, 107, 0.9));
+  /* Brand blue overlay */
+  z-index: 1;
+}
+
+.page-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-banner h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-banner p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
